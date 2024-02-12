@@ -28,11 +28,9 @@ def translator_lan(text, lang_from, lang_to):
     translation = translator.translate(text, src=lang_from, dest=lang_to)
     return translation.text
 
-text = voice_to_text("sounds/Recording.mp3")
+text = voice_to_text("sounds/gender.mp3")
 
 translated = translator_lan(text, "ka", "en")
-
-print(translated)
 
 translated = translated+"\ncan u write note from this text?"
 print(translated)
