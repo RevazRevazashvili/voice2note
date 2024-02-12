@@ -2,7 +2,7 @@ import requests
 from googletrans import Translator
 import openai
 
-api_key = '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'
+api_key = 
 
 openai.api_key = api_key
 
@@ -34,12 +34,15 @@ translated = translator_lan(text, "ka", "en")
 
 print(translated)
 
+translated = translated+"\ncan u write note from this text?"
+print(translated)
+
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
         {
             "role": "user",
-            "content": translated+"can u write note from this text?"
+            "content": translated
         }
     ]
 )
