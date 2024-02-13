@@ -1,34 +1,38 @@
 from google.cloud import speech
 import json
 
+class Recognizer:
+    def __init__(self, service_account_file='key.json', language_code = 'ka', sample_rate_hertz= 44100, enable_automatic_punctuation= True):
+        self.client = speech.SpeechClient.from_service_account_file(service_account_file)
+        self.config = speech.RecognitionConfig(
+            sample_rate_hertz= sample_rate_hertz,
+            enable_automatic_punctuation= enable_automatic_punctuation,
+            language_code= language_code)
 
-# get key!!! motherfucker!!
-client = speech.SpeechClient.from_service_account_file('key.json')
+    def transcribe_mp3_file(self, file_path):
+        """
+        transcribes mp3 file and returns transcript
+        """
 
-# woher mein recordings
-file_name = "sounds/Recording.mp3"
+        with open(file_path, 'rb') as f:
+            mp3_data = f.read();
 
-# open file biatch
-with open(file_name, 'rb') as f:
-    mp3_data = f.read();
+        audio_file = speech.RecognitionAudio(content=mp3_data)
 
-# recognize mein ballzz
-audio_file = speech.RecognitionAudio(content=mp3_data)
+        response = self.client.recognize(
+        config=self.config,
+        audio=audio_file
+        )
 
-# it can config and oxidize on my anus
-config = speech.RecognitionConfig(
-    sample_rate_hertz= 44100,
-    enable_automatic_punctuation= True,
-    language_code='ka'
-)
+        for result in response.results:
+            transcripts.append(result.alternatives[0].transcript)
 
-# them m̶o̶m̶e̶n̶t̶ mommy of truth
-response = client.recognize(
-    config=config,
-    audio=audio_file
-)
+        return transcripts
 
-# rezuuulltss!!!!
-for result in response.results:
-    print(result.alternatives[0].transcript)
+
+
+rec = Recognizer();
+
+print(rec.transcribe_mp3_file("sounds/Recording.mp3"))
+
 
