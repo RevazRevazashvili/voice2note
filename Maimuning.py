@@ -1,7 +1,7 @@
 from google.cloud import speech
-import json
 from google.cloud import translate_v2 as translate
-
+from openai import OpenAI
+import os
 
 class Recognizer:
     def __init__(self, service_account_file='key.json', language_code = 'ka', sample_rate_hertz= 44100, enable_automatic_punctuation= True):
@@ -59,14 +59,58 @@ class Translator:
 
         return translations
 
+def read_text_file(file_path):
+        """
+        reads text from file and returns it in a string form
+        :param file_path: path of the file
+        :return: text of the file parsed as a string
+        """
+        try:
+            with open(file_path, 'r') as file:
+                text = file.read()
+                return text
+        except FileNotFoundError:
+            print(f"Error: File '{file_path}' not found.")
+            return None
 
+class Notetaker:
+    def __init__(self, system_prompt_file="Prompts/SystemPrompt", api_key = None):
+        if api_key == None:
+            api_key = os.environ['OPENAI_API_KEY']
+
+        self.client = OpenAI(api_key=api_key)
+        self.system_prompt = read_text_file(system_prompt_file)
+
+    def noterize(self, text):
+        completion = self.client.chat.completions.create(
+            model="gpt-3.5-turbo-0125",
+            messages=[
+            {"role": "system", "content": self.system_prompt},
+            {"role": "user", "content": text}
+            ]
+        )
+
+        return completion.choices[0].message.content
+
+
+#
 # rec = Recognizer();
 # trans = Translator();
+# noter = Notetaker();
 #
-# transcript = rec.transcribe_mp3_file("sounds/Recording.mp3")
+# transcripts = rec.transcribe_mp3_file("sounds/Recording.mp3")
+# translations = trans.translate_text(transcripts)
 #
-# print(f"transcripts: {transcript}")
+# text = ""
+# for translation in translations:
+#     text += translation;
 #
-# print(f"translations: {trans.translate_text(transcript)}")
+# finalNotes = noter.noterize(text)
+#
+# print(f"transcripts: {transcripts}")
+# print(f"translations: {translations}")
+# print(f"Notes: {finalNotes}")
+#
+
 
 
