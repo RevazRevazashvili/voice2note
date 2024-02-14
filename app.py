@@ -4,7 +4,7 @@ from googletrans import Translator
 import openai
 from st_audiorec import st_audiorec
 
-api_key = 
+api_key =
 
 openai.api_key = api_key
 
