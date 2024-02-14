@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7ce93d0-36ed-4d4b-b3c9-609d6b57f0ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types-0.6.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types-0.6.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types-0.6.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types-0.6.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types-0.6.0.dist-info/licenses/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/annotated_types/test_cases.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio-4.2.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio-4.2.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio-4.2.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio-4.2.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio-4.2.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio-4.2.0.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio-4.2.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_backends/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_backends/_asyncio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_backends/_trio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_eventloop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_fileio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_resources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_sockets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_streams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_subprocesses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_synchronization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/_core/_typedattr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/_eventloop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/_resources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/_sockets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/_streams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/_subprocesses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/_tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/abc/_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/from_thread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/lowlevel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/pytest_plugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/streams/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/streams/buffered.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/streams/file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/streams/memory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/streams/stapled.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/streams/text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/streams/tls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/to_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/anyio/to_thread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama-0.4.6.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama-0.4.6.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama-0.4.6.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama-0.4.6.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama-0.4.6.dist-info/licenses/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/ansi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/ansitowin32.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/initialise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/tests/ansi_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/tests/ansitowin32_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/tests/initialise_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/tests/isatty_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/tests/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/tests/winterm_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/win32.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/colorama/winterm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro-1.9.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro-1.9.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro-1.9.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro-1.9.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro-1.9.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro-1.9.0.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro-1.9.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro/distro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/distro/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup-1.2.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup-1.2.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup-1.2.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup-1.2.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup-1.2.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup/_catch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup/_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup/_formatting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup/_suppress.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/exceptiongroup/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11-0.14.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11-0.14.0.dist-info/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11-0.14.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11-0.14.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11-0.14.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11-0.14.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_abnf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_headers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_readers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_receivebuffer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_state.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/_writers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/data/test-file" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_against_stdlib_http.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_headers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_receivebuffer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_state.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/h11/tests/test_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore-1.0.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore-1.0.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore-1.0.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore-1.0.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore-1.0.2.dist-info/licenses/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/connection_pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/http11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/http2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/http_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/interfaces.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_async/socks_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_backends/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_backends/anyio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_backends/auto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_backends/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_backends/mock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_backends/sync.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_backends/trio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_ssl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/connection_pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/http11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/http2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/http_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/interfaces.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_sync/socks_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_synchronization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_trace.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpcore/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx-0.26.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx-0.26.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx-0.26.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx-0.26.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx-0.26.0.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx-0.26.0.dist-info/licenses/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/__version__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_content.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_decoders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_multipart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_status_codes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_transports/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_transports/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_transports/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_transports/default.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_transports/mock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_transports/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_urlparse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/httpx/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai-1.12.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai-1.12.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai-1.12.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai-1.12.0.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai-1.12.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai-1.12.0.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai-1.12.0.dist-info/licenses/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_base_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_extras/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_extras/_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_extras/numpy_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_extras/pandas_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_legacy_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_module_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_qs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_resource.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_streaming.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/_logs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/_streams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/_sync.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/_transform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/_typing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_utils/_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/audio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/chat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/chat/completions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/completions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_api/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_progress.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_tools/_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_tools/fine_tunes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_tools/migrate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/cli/_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/lib/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/lib/_old_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/lib/_validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/lib/azure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/pagination.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/audio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/audio/audio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/audio/speech.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/audio/transcriptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/audio/translations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/assistants/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/assistants/assistants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/assistants/files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/beta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/messages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/messages/files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/messages/messages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/runs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/runs/runs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/runs/steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/beta/threads/threads.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/chat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/chat/chat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/chat/completions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/completions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/embeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/fine_tuning/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/fine_tuning/fine_tuning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/fine_tuning/jobs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/resources/moderations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/audio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/audio/speech_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/audio/transcription.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/audio/transcription_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/audio/translation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/audio/translation_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistant_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistant_deleted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistant_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistant_update_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistants/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistants/assistant_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistants/file_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistants/file_delete_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/assistants/file_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/chat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/thread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/thread_create_and_run_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/thread_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/thread_deleted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/thread_update_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/message_content_image_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/message_content_text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/message_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/message_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/message_update_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/messages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/messages/file_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/messages/message_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/required_action_function_tool_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/run_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/run_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/run_submit_tool_outputs_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/run_update_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/code_tool_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/function_tool_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/message_creation_step_details.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/retrieval_tool_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/run_step.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/step_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/runs/tool_calls_step_details.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/beta/threads/thread_message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_assistant_message_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_chunk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_content_part_image_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_content_part_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_content_part_text_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_function_call_option_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_function_message_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_message_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_message_tool_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_message_tool_call_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_named_tool_choice_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_role.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_system_message_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_token_logprob.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_tool_choice_option_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_tool_message_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_tool_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/chat_completion_user_message_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/chat/completion_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/completion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/completion_choice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/completion_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/completion_usage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/create_embedding_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/embedding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/embedding_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/file_content.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/file_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/file_deleted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/file_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/file_object.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/fine_tuning/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/fine_tuning/fine_tuning_job.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/fine_tuning/fine_tuning_job_event.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/fine_tuning/job_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/fine_tuning/job_list_events_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/fine_tuning/job_list_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/image_create_variation_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/image_edit_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/image_generate_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/images_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/model_deleted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/moderation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/moderation_create_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/moderation_create_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/shared/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/shared/function_definition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/shared/function_parameters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/shared_params/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/shared_params/function_definition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/types/shared_params/function_parameters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/openai/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic-2.6.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic-2.6.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic-2.6.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic-2.6.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic-2.6.1.dist-info/licenses/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_core_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_core_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_dataclasses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_decorators_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_discriminated_union.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_forward_ref.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_generate_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_generics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_git.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_internal_dataclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_known_annotated_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_mock_val_ser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_model_construction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_repr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_schema_generation_shared.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_signature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_std_types_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_typing_extra.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_validate_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_internal/_validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/_migration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/alias_generators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/aliases.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/annotated_handlers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/class_validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/dataclasses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/datetime_parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/decorator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/class_validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/copy_internals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/decorator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/deprecated/tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/env_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/error_wrappers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/functional_serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/functional_validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/generics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/json_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/mypy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/networks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/plugin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/plugin/_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/plugin/_schema_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/root_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/type_adapter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/typing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/_hypothesis_plugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/annotated_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/class_validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/dataclasses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/datetime_parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/decorator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/env_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/error_wrappers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/generics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/mypy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/networks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/typing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/v1/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/validate_call_decorator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic/warnings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core-2.16.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core-2.16.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core-2.16.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core-2.16.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core-2.16.2.dist-info/license_files/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core/_pydantic_core.cp310-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core/_pydantic_core.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core/core_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pydantic_core/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/LICENSE.APACHE2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/LICENSE.MIT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio-1.3.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio/_impl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio/_tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio/_tests/test_sniffio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sniffio/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm-4.66.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm-4.66.2.dist-info/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm-4.66.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm-4.66.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm-4.66.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm-4.66.2.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm-4.66.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_dist_ver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_monitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_tqdm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_tqdm_gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_tqdm_notebook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_tqdm_pandas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/asyncio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/auto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/autonotebook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/completion.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/bells.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/concurrent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/discord.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/itertools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/logging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/slack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/telegram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/contrib/utils_worker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/dask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/keras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/notebook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/rich.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/std.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/tk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/tqdm.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/tqdm/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/typing_extensions-4.9.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/typing_extensions-4.9.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/typing_extensions-4.9.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/typing_extensions-4.9.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/typing_extensions-4.9.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/typing_extensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prompts/SystemPrompt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/distro.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/httpx.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/openai.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/tqdm.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maimuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Maimuning.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2cJ3fNVFLiXZz8Mn20Gtdw5okcj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Cx3n2",
+    "settings.editor.selected.configurable": "terminal"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="voice2note" is-module-sdk="true">
+        <envs>
+          <env key="OPENAI_API_KEY" value="&quot;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&quot;" />
+        </envs>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="voice2note" />
+        <option name="myEnvs">
+          <map>
+            <entry key="OPENAI_API_KEY" value="&quot;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&quot;" />
+          </map>
+        </option>
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Maimuning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="voice2note" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="OPENAI_API_KEY" value="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" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Maimuning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Maimuning" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Cx3n2\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7ce93d0-36ed-4d4b-b3c9-609d6b57f0ca" name="Changes" comment="" />
+      <created>1707815958723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707815958723</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
