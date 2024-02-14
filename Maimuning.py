@@ -1,7 +1,44 @@
 from google.cloud import speech
 from google.cloud import translate_v2 as translate
 from openai import OpenAI
+from flask import Flask, render_template, request
 import os
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    if 'file' not in request.files:
+        return "No file part"
+
+    file = request.files['file']
+
+    if file.filename == '':
+        return "No selected file"
+
+
+    rec = Recognizer();
+    trans = Translator();
+    noter = Notetaker();
+
+    transcripts = rec.transcribe_mp3_file(file)
+    translations = trans.translate_text(transcripts)
+
+    text = ""
+    for translation in translations:
+        text += translation;
+
+    finalNotes = noter.noterize(text)
+
+    print(f"transcripts: {transcripts}")
+    print(f"translations: {translations}")
+    print(f"Notes: {finalNotes}")
+
+    return render_template('index.html', transcripts=transcripts, translations=translations, notes=finalNotes)
 
 class Recognizer:
     def __init__(self, service_account_file='key.json', language_code = 'ka', sample_rate_hertz= 44100, enable_automatic_punctuation= True):
@@ -11,13 +48,12 @@ class Recognizer:
             enable_automatic_punctuation= enable_automatic_punctuation,
             language_code= language_code)
 
-    def transcribe_mp3_file(self, file_path):
+    def transcribe_mp3_file(self, file):
         """
         transcribes mp3 file and returns transcript
         """
 
-        with open(file_path, 'rb') as f:
-            mp3_data = f.read();
+        mp3_data = file.read();
 
         audio_file = speech.RecognitionAudio(content=mp3_data)
 
@@ -93,24 +129,7 @@ class Notetaker:
         return completion.choices[0].message.content
 
 
-#
-# rec = Recognizer();
-# trans = Translator();
-# noter = Notetaker();
-#
-# transcripts = rec.transcribe_mp3_file("sounds/Recording.mp3")
-# translations = trans.translate_text(transcripts)
-#
-# text = ""
-# for translation in translations:
-#     text += translation;
-#
-# finalNotes = noter.noterize(text)
-#
-# print(f"transcripts: {transcripts}")
-# print(f"translations: {translations}")
-# print(f"Notes: {finalNotes}")
-#
 
-
+if __name__ == '__main__':
+    app.run(debug=True)
 
