@@ -1,8 +1,11 @@
+import math
+
 from google.cloud import speech
 from google.cloud import translate_v2 as translate
 from openai import OpenAI
 from flask import Flask, render_template, request
 import os
+import miniaudio
 
 app = Flask(__name__)
 
@@ -48,12 +51,14 @@ class Recognizer:
             enable_automatic_punctuation= enable_automatic_punctuation,
             language_code= language_code)
 
+
     def transcribe_mp3_file(self, file):
         """
         transcribes mp3 file and returns transcript
         """
+        with open(file, 'rb') as f:
+            mp3_data = f.read()
 
-        mp3_data = file.read();
 
         audio_file = speech.RecognitionAudio(content=mp3_data)
 
@@ -68,6 +73,68 @@ class Recognizer:
             transcripts.append(result.alternatives[0].transcript)
 
         return transcripts
+
+    @staticmethod
+    def generate_audio_chunks(audio_data, chunk_duration=60):
+        """
+        Generator function to yield chunks of audio data that are 60 seconds or less in duration.
+
+        Args:
+        - audio_data: The complete audio data to be split into chunks.
+        - chunk_duration: The duration of each audio chunk in seconds. Default is 60 seconds.
+
+        Yields:
+        - chunk: A chunk of audio data that is 60 seconds or less in duration.
+        """
+        # Calculate the number of samples per chunk
+        samples_per_chunk = chunk_duration * 44100  # Adjust SAMPLE_RATE according to your audio sample rate
+
+        # Calculate the total number of chunks needed
+        total_chunks = math.ceil(len(audio_data) / samples_per_chunk)
+
+        # Generate audio chunks
+        for i in range(total_chunks):
+            start_idx = i * samples_per_chunk
+            end_idx = min((i + 1) * samples_per_chunk, len(audio_data))
+            chunk = audio_data[start_idx:end_idx]
+            yield chunk
+
+    def transcribe_streaming(self, stream_file: str) -> speech.RecognitionConfig:
+        """Streams transcription of the given audio file."""
+
+        with open(stream_file, "rb") as audio_file:
+            content = audio_file.read()
+
+        requests = (
+            speech.StreamingRecognizeRequest(audio_content=chunk) for chunk in Recognizer.generate_audio_chunks(content)
+        )
+
+        streaming_config = speech.StreamingRecognitionConfig(config=self.config)
+
+        # streaming_recognize returns a generator.
+        responses = self.client.streaming_recognize(
+            config=streaming_config,
+            requests=requests,
+        )
+
+        data = []
+
+        for response in responses:
+            # Once the transcription has settled, the first result will contain the
+            # is_final result. The other results will be for subsequent portions of
+            # the audio.
+            for result in response.results:
+                print(f"Finished: {result.is_final}")
+                print(f"Stability: {result.stability}")
+                alternatives = result.alternatives
+                data.append(alternatives[0].transcript)
+                # The alternatives are ordered from most likely to least.
+                for alternative in alternatives:
+                    print(f"Confidence: {alternative.confidence}")
+                    print(f"Transcript: {alternative.transcript}")
+
+        return data
+
 
 class Translator:
     def __init__(self, service_account_json='key.json'):
@@ -130,6 +197,34 @@ class Notetaker:
 
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
+
+
+
+
+rec = Recognizer()
+
+print(rec.transcribe_streaming("sounds/Recording123.mp3"))
+
+
+# audio_path = "sounds/Recording.mp3"
+# target_sampling_rate = 16000  #the input audio will be resampled a this sampling rate
+# n_channels = 1  #either 1 or 2
+# waveform_duration = 1 #in seconds
+# offset = 0 #this means that we read only in the interval [15s, duration of file]
+#
+# waveform_generator = miniaudio.stream_file(
+#      filename = audio_path,
+#      sample_rate = target_sampling_rate,
+#      seek_frame = int(offset * target_sampling_rate),
+#      frames_to_read = int(waveform_duration * target_sampling_rate),
+#      output_format = miniaudio.SampleFormat.SIGNED16,
+#      nchannels = n_channels)
+#
+# i = 0
+# for waveform in waveform_generator:
+#     i += 1
+#     print(f"Waveform: {waveform}\n\n\nEndWaveform {i}")
+#
