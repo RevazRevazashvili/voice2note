@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="file-upload-container">
+            <h1>File Upload</h1>
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <input type="file" name="file" id="file">
+                <button id="Noterize" type="submit">Noterize</button>
+            </form>
+        </div>
+        <div id="audio-container">
+            <h2>Record Audio</h2>
+            <button id="startRecord">Start Recording</button>
+            <button id="stopRecord" disabled>Stop Recording</button>
+            <audio id="audio" controls></audio>
+            <div id="timer"></div>
+        </div>
+
+        <div id="text-container">
+            <h2>Transcripts:</h2>
+            <ul>
+                {% for transcript in transcripts %}
+                <li>{{ transcript }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2>Translations:</h2>
+            <ul>
+                {% for translation in translations %}
+                <li>{{ translation }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2>Notes:</h2>
+            <ul>
+                {% for translation in translations %}
+                <li>{{ notes }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
