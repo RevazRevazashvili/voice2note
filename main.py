@@ -2,7 +2,7 @@ import requests
 from googletrans import Translator
 import openai
 
-api_key = 
+api_key = "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"
 
 openai.api_key = api_key
 
@@ -14,6 +14,7 @@ def query(filename):
     with open(filename, "rb") as f:
         data = f.read()
     resp = requests.post(API_URL, headers=headers, data=data)
+    print(type(resp))
     return resp.json()
 
 
@@ -32,7 +33,7 @@ text = voice_to_text("sounds/gender.mp3")
 
 translated = translator_lan(text, "ka", "en")
 
-translated = translated+"\ncan u write note from this text?"
+translated = translated+"\ncan u write note from this text_to_translate?"
 print(translated)
 
 response = openai.ChatCompletion.create(
