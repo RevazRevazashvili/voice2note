@@ -131,3 +131,49 @@ p {
     vertical-align: middle;
     margin: 0 10px;
 }
+
+
+/* Add styles for Transcripts */
+#text-container h2:nth-child(1) {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#text-container ul:nth-child(2) {
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#text-container ul:nth-child(2) li {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+/* Add styles for Translations */
+#text-container h2:nth-child(3) {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#text-container ul:nth-child(4) {
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#text-container ul:nth-child(4) li {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+/* Add styles for Notes */
+#text-container h2:nth-child(5) {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#text-container p {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
