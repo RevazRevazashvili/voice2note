@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const stopRecordBtn = document.getElementById('stopRecord');
     const audioElement = document.getElementById('audio');
     const timerElement = document.getElementById('timer');
+    const NoterizeElementBtn = document.getElementById('Noterize');
+
+
     let mediaRecorder;
     let recordedChunks = [];
     let startTime;
@@ -10,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     startRecordBtn.addEventListener('click', startRecording);
     stopRecordBtn.addEventListener('click', stopRecording);
+    NoterizeElementBtn.addEventListener('click', Noterizeing);
+
+    function Noterizeing(){
+        NoterizeElementBtn.innerHTML = "Processing...";
+    }
 
     function startRecording() {
         startTime = new Date().getTime();
