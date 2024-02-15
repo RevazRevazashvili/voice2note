@@ -1,5 +1,5 @@
-import math
 
+import math
 from google.cloud import speech
 from google.cloud import translate_v2 as translate
 from openai import OpenAI
@@ -47,6 +47,7 @@ class Recognizer:
     def __init__(self, service_account_file='key.json', language_code = 'ka', sample_rate_hertz= 44100, enable_automatic_punctuation= True):
         self.client = speech.SpeechClient.from_service_account_file(service_account_file)
         self.config = speech.RecognitionConfig(
+            encoding=speech.RecognitionConfig.AudioEncoding.MP3,
             sample_rate_hertz= sample_rate_hertz,
             enable_automatic_punctuation= enable_automatic_punctuation,
             language_code= language_code)
@@ -175,7 +176,6 @@ def read_text_file(file_path):
         except FileNotFoundError:
             print(f"Error: File '{file_path}' not found.")
             return None
-
 class Notetaker:
     def __init__(self, system_prompt_file="Prompts/SystemPrompt", api_key = None):
         if api_key == None:
