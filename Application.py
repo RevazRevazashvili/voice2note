@@ -6,6 +6,8 @@ import os
 
 butt = None
 down = None
+sigismun = None
+audio_file = None
 rec = Utility.Recognizer()
 trans = Utility.Translator()
 noter = Utility.Notetaker(api_key=st.secrets["OPENAI_API_KEY"])
@@ -23,23 +25,54 @@ sound_mode = st.selectbox("აირჩიეთ ერთ-ერთი", [uploa
 
 if sound_mode == upload:
     audio_file = st.file_uploader("ატვირთეთ აუდიო ფაილი", type=['mp3'])
-    if audio_file:
-        st.markdown(":green[ფაილი წარმატებით აიტვირთა]")
-
-    if audio_file:
-        with st.spinner(text='მიმდინარეობს აუდიო ფაილის დამუშავება...'):
-            text = rec.transcribe_from_audio_data(audio_file.read())
-            translation = trans.translate_text(text)
-
-        if butt is None:
-            butt = st.button("გააანალიზე")
-
 elif sound_mode == record:
-    Realtime.sound_recorder()
+    sigismun = Realtime.sound_recorder_fantasy_time()
+    st.write(sigismun.raw_data)
+    #Realtime.sound_recorder()
     #st.write(wav_audio_data)
     #text = rec.transcribe_from_audio_data(wav_audio_data)
     #translated = trans.translate_text(text)
     #TODO: assign translation
+
+
+if audio_file:
+    with st.spinner(text='მიმდინარეობს აუდიო ფაილის დამუშავება...'):
+        text = rec.transcribe_from_audio_data(audio_file.read())
+        translation = trans.translate_text(text)
+
+    st.markdown(":green[ფაილი წარმატებით აიტვირთა]")
+
+    if butt is None:
+        butt = st.button("გააანალიზე")
+
+if sigismun is not None:
+    if butt is None:
+        butt = st.button("გააანალიზე")
+
+    content = sigismun.raw_data
+    with st.spinner(text='მიმდინარეობს აუდიოს დამუშავება...'):
+        text = rec.transcribe_from_audio_data(content)
+        translation = trans.translate_text(text)
+
+    st.markdown(":green[ფაილი წარმატებით აიტვირთა]")
+
+
+
+
+
+# st.title("Audio Recorder")
+# audio = audiorecorder("Click to record", "Click to stop recording")
+#
+# if len(audio) > 0:
+#     # To play audio in frontend:
+#     st.audio(audio.export().read())
+#
+#     # # To save audio to a file, use pydub export method:
+#     # audio.export("audio.wav", format="wav")
+#     #
+#     # # To get audio properties, use pydub AudioSegment properties:
+#     # st.write(f"Frame rate: {audio.frame_rate}, Frame width: {audio.frame_width}, Duration: {audio.duration_seconds} seconds")
+
 
 
 

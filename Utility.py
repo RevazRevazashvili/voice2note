@@ -1,10 +1,10 @@
 import math
-
 from google.cloud import speech
 from google.cloud import translate_v2 as translate
 from openai import OpenAI
-import os
+from google.cloud import storage
 
+SAMPLE_RATE = 48000
 
 def generate_audio_chunks(audio_data, chunk_duration=60):
         """
@@ -18,7 +18,7 @@ def generate_audio_chunks(audio_data, chunk_duration=60):
         - chunk: A chunk of audio data that is 60 seconds or less in duration.
         """
         # Calculate the number of samples per chunk
-        samples_per_chunk = chunk_duration * 44100  # Adjust SAMPLE_RATE according to your audio sample rate
+        samples_per_chunk = chunk_duration * SAMPLE_RATE  # Adjust SAMPLE_RATE according to your audio sample rate
 
         # Calculate the total number of chunks needed
         total_chunks = math.ceil(len(audio_data) / samples_per_chunk)
@@ -28,6 +28,7 @@ def generate_audio_chunks(audio_data, chunk_duration=60):
             start_idx = i * samples_per_chunk
             end_idx = min((i + 1) * samples_per_chunk, len(audio_data))
             chunk = audio_data[start_idx:end_idx]
+
             yield chunk
 
 
@@ -47,13 +48,13 @@ def read_text_file(file_path):
 
 
 class Recognizer:
-    def __init__(self, service_account_file='key.json', language_code = 'ka', sample_rate_hertz= 44100, enable_automatic_punctuation= True):
+    def __init__(self, service_account_file='key.json', language_code='ka', sample_rate_hertz=SAMPLE_RATE, enable_automatic_punctuation=True):
         self.client = speech.SpeechClient.from_service_account_file(service_account_file)
         self.config = speech.RecognitionConfig(
             encoding=speech.RecognitionConfig.AudioEncoding.MP3,
-            sample_rate_hertz= sample_rate_hertz,
-            enable_automatic_punctuation= enable_automatic_punctuation,
-            language_code= language_code
+            sample_rate_hertz=sample_rate_hertz,
+            enable_automatic_punctuation=enable_automatic_punctuation,
+            language_code=language_code
         )
 
     def transcribe_mp3_file(self, file):
@@ -100,7 +101,7 @@ class Recognizer:
             # Once the transcription has settled, the first result will contain the
             # is_final result. so first alternative will be the most likely one.
             for result in response.results:
-                data.append(result.alternatives[0].transcript)
+                data.append(f"{result.alternatives[0].transcript}\n")
 
         return data
 
@@ -140,6 +141,42 @@ class Recognizer:
 
         return data
 
+    def transcribe_gcs(self, gcs_uri: str) -> str:
+        """Asynchronously transcribes the audio file specified by the gcs_uri.
+
+        Args:
+            gcs_uri: The Google Cloud Storage path to an audio file.
+
+        Returns:
+            The generated transcript from the audio file provided.
+        """
+
+        audio = speech.RecognitionAudio(uri=gcs_uri)
+        config = speech.RecognitionConfig(
+            encoding=speech.RecognitionConfig.AudioEncoding.MP3,
+            sample_rate_hertz=48000,
+            language_code="ka",
+        )
+
+        operation = self.client.long_running_recognize(config=config, audio=audio)
+
+        print("Waiting for operation to complete...")
+        response = operation.result(timeout=7200)
+        transcript = ""
+        transcript_builder = []
+        # Each result is for a consecutive portion of the audio. Iterate through
+        # them to get the transcripts for the entire audio file.
+        for result in response.results:
+            # The first alternative is the most likely one for this portion.
+            transcript += result.alternatives[0].transcript
+            #transcript_builder.append(f"\nTranscript: {result.alternatives[0].transcript}")
+            #transcript_builder.append(f"\nConfidence: {result.alternatives[0].confidence}")
+
+        #transcript = "".join(transcript_builder)
+        #print(transcript)
+
+        return transcript
+
 
 class Translator:
     def __init__(self, service_account_json='key.json'):
@@ -155,22 +192,13 @@ class Translator:
         :return:
             -returns translated string regardless if input text is sequence of strings or just one string
         """
-        # if text is str:
-        #     text = text.decode("utf-8")
-        # else:
-        #     for txt in text:
-        #         txt = txt.decode("utf-8")
 
-        results = self.client.translate(text, target_language=target)
-
-        # if not isinstance(results, list):
-        #     return results
-
+        results = self.client.translate(text, target_language=target, format_='text')
         try:
             translation = ""
 
             for result in results:
-                translation += result["translatedText"]
+                translation += (result["translatedText"] + "\n")
 
             return translation
         except:
@@ -198,25 +226,51 @@ class Notetaker:
         return completion.choices[0].message.content
 
 
+def upload_to_gcs(bucket_name, filecontent, destination_blob_name, credentials_file):
+    # Initialize the Google Cloud Storage client with the credentials
+    storage_client = storage.Client.from_service_account_json(credentials_file)
+
+    # Get the target bucket
+    bucket = storage_client.bucket(bucket_name)
+
+    # Upload the file to the bucket
+    blob = bucket.blob(destination_blob_name)
+    #blob.upload_from_filename(source_file_path)
+    blob.upload_from_string(filecontent, content_type='audio/mp3')
+
+    return f"gs://noterator_bucket/{destination_blob_name}"
 
 
 
-# rec = Recognizer()
-# trans = Translator()
-# noter = Notetaker()
+
+rec = Recognizer()
+trans = Translator()
+noter = Notetaker()
+
+transcripts = rec.transcribe_gcs("gs://noterator_bucket/pres.mp3")
+print(transcripts)
+#transcripts = rec.transcribe_streaming("sounds/philosophy.mp3")
+
+# with open("sounds/pres.mp3", 'rb') as f:
+#     data = f.read()
 #
-# transcripts = rec.transcribe_streaming("sounds/Recording123.mp3")
-# translations = trans.translate_text(transcripts)
 #
-# text = ""
-# for translation in translations:
-#     text += translation
-#
-# finalNotes = noter.noterize(text)
-#
-# print(f"transcripts: {transcripts}")
-# print(f"translations: {translations}")
-# print(f"Notes: {finalNotes}")
+# transcripts = rec.transcribe_from_audio_data(data)
+
+translations = trans.translate_text(transcripts)
+
+text = ""
+for translation in translations:
+    text += translation
+
+finalNotes = noter.noterize(text)
+
+finalNotes = trans.translate_text(finalNotes, target='ka')
+
+print(f"transcripts: {transcripts}")
+print(f"translations: {translations}")
+print(f"Notes: {finalNotes}")
+
 
 
 
